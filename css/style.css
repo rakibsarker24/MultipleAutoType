@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.type{
+    position: relative;
+    display: inline-block;
+}
+.type::after{
+    position: absolute;
+    content: '';
+    right: 0px;
+    top:25%;
+    width: 2px;
+    height: 25px;
+    background: black;
+    animation: lafalafi .7s infinite;
+    -webkit-animation: lafalafi .7s infinite;
+}
+
+@keyframes lafalafi{
+    from{
+        opacity: 0;
+    }
+    start{
+        opacity: 1;
+    }
+}
+
